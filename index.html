@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTodoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="renderTime()"  >
+
+<nav class="navbar"  >
+    <div class="logo">      
+          <a class="img" href="#"><img src= "https://img.icons8.com/cute-clipart/64/000000/task.png"
+             width="50" height="50" alt=""></a>
+            </div>
+             <div>
+                 <ul class="menu">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul></div>  
+    </div>
+    </nav>
+
+    <!-- //********************************************************** -->
+  <div class="divColor">
+    <p> <input type="checkbox" id="myCheckbox" >Hide completed</p>
+   <div > <button onclick="white_btn()" class="button_white">white</button>
+  <button onclick="pink_btn()" class="button_pink">pink</button>
+  </div></div>
+
+
+    <div class="div">
+  <div><h1 class="title">MyTodoList</h1></div>  
+
+  <div class="button_input">
+<input id="input"  type="text" value="" placeholder="New Todo.." >
+<button onclick="add()" id="button" value="">Submit</button>
+</div>
+
+
+<div class="list"> 
+    <ul id="task" >
+    
+    </ul>
+</div>
+
+<div class="delete_save">
+    <button class="delete" onclick="deleteList()" id="button" value="">Delete List</button>
+    <button class="save"  id="button" value="">Save List</button>
+</div>
+</div> 
+    <script src="practice.js"></script>
+</body>
+</html>
